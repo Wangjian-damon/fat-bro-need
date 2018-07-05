@@ -1,0 +1,33 @@
+{
+    "datalist":[{
+        "school_name":"中国人民大学（苏州校区）",
+        "area":"苏JS",
+        "year":[2017,2016,2015],
+        "score_line_rank":[18,21,20],
+        "score_line":[647,653,628],
+        "score_line_refer":["D745.1","D742.9","D734.5"],
+        "fill_rate":[783,900,740],
+        "admit_num":[6,5,5],
+        "admit_score_sections":{"among5":[3,2,3],"5to10":[2,2,1],"10to20":[1,1,1],"beyond20":[0,0,0]}
+    },{
+        "school_name":"武汉大学",
+        "area":"鄂HB",
+        "year":[2017,2016,2015],
+        "score_line_rank":[20,24,24],
+        "score_line":[644,650,622],
+        "score_line_refer":["D739.9","D736.9","D772.0"],
+        "fill_rate":[638,776,682],
+        "admit_num":[133,127,136],
+        "admit_score_sections":{"among5":[55,74,58],"5to10":[50,36,58],"10to20":[27,17,20],"beyond20":[1,0,0]}
+    },{
+        "school_name":"中国社会科学院大学",
+        "area":"京BJ",
+        "year":[2017],
+        "score_line_rank":[21],
+        "score_line":[641],
+        "score_line_refer":["D735.2"],
+        "fill_rate":[2900],
+        "admit_num":[6],
+        "admit_score_sections":{"among5":[2],"5to10":[2],"10to20":[2],"beyond20":[0]}
+    }]
+}
