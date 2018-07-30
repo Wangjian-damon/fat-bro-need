@@ -38,17 +38,9 @@ newData.forEach((e)=>{
         scoreLineList[e.scoreLine] = e ;
     }
 });
-/* scoreLineList = newData.map((e,i)=>{
-    let scoreLineO = {} ;
-    if(e.scoreLine){
-        scoreLineO['id'] = i ;
-        scoreLineO[e.scoreLine] = e ;
-    }
-    return scoreLineO ;
-}) */
 // console.log(areaList);
 // console.log(schoolList);
-console.log(scoreLineList);
+// console.log(scoreLineList);
 //地区对应学校
 let areaSchoolList = {};
 areaList.forEach(e=>{
@@ -77,10 +69,29 @@ newData.forEach(e=>{
 });
 // console.log(schoolMajorList);
 
-return false ;
-
 //最后写出文件
+
 newData = JSON.stringify(newData, null , '  ');
 fs.writeFile(path.join(__dirname, './newRealData.json'),newData, err => {
     !err && console.log('写出newRealData成功------即源数据');
+});
+areaList = JSON.stringify(areaList, null , '  ');
+fs.writeFile(path.join(__dirname, './areaList.json'),areaList, err => {
+    !err && console.log('写出areaList成功------即源areaList数据');
+});
+areaSchoolList = JSON.stringify(areaSchoolList, null , '  ');
+fs.writeFile(path.join(__dirname, './areaSchoolList.json'),areaSchoolList, err => {
+    !err && console.log('写出 areaSchoolList 成功------即源 areaSchoolList 数据');
+});
+schoolMajorList = JSON.stringify(schoolMajorList, null , '  ');
+fs.writeFile(path.join(__dirname, './schoolMajorList.json'),schoolMajorList, err => {
+    !err && console.log('写出 schoolMajorList 成功------即源 schoolMajorList 数据');
+});
+schoolList = JSON.stringify(schoolList, null , '  ');
+fs.writeFile(path.join(__dirname, './schoolList.json'),schoolList, err => {
+    !err && console.log('写出 schoolList 成功------即源 schoolList 数据');
+});
+scoreLineList = JSON.stringify(scoreLineList, null , '  ');
+fs.writeFile(path.join(__dirname, './scoreLineList.json'),scoreLineList, err => {
+    !err && console.log('写出 scoreLineList 成功------即源 scoreLineList 数据');
 });
