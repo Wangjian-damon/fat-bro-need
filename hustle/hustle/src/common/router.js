@@ -74,6 +74,12 @@ export const getRouterData = app => {
     '/': {
       component: dynamicWrapper(app, ['user', 'login'], () => import('../layouts/BasicLayout')),
     },
+    '/fatbro': {
+      component: dynamicWrapper(app, ['chart'], () => import('../routes/Fatbro')),
+    },
+    '/score-line-rank': {
+      component: dynamicWrapper(app, ['chart'], () => import('../routes/ScoreLineRank')),
+    },
     '/dashboard/analysis': {
       component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
     },

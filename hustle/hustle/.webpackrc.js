@@ -23,7 +23,7 @@ export default {
   lessLoaderOptions: {
     javascriptEnabled: true,
   },
-  disableDynamicImport: true,
+  // disableDynamicImport: true,
   publicPath: '/',
   hash: true,
 };

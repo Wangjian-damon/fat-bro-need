@@ -1,5 +1,16 @@
 import { isUrl } from '../utils/utils';
-
+const menuData1 = [
+  {
+    name: '学校查询',
+    icon: 'rocket',
+    path: 'fatbro',
+  },
+  {
+    name:'分数查询',
+    icon:'dot-chart',
+    path:'score-line-rank'
+  }
+];
 const menuData = [
   {
     name: 'dashboard',
@@ -174,4 +185,4 @@ function formatter(data, parentPath = '/', parentAuthority) {
   });
 }
 
-export const getMenuData = () => formatter(menuData);
+export const getMenuData = () => formatter(menuData1);
