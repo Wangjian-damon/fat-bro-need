@@ -8,7 +8,7 @@ console.log(data.length);
 data.forEach((e,idx)=>{
     e.yearList.forEach((item,i)=>{
         let yearData = {
-            id: idx+''+i,
+            key: idx+''+i,
             area:e.area,
             school:e.school.replace(/\s/g,''),
             major:e.major.replace(/\s/g,''),
